@@ -42,7 +42,7 @@ def get_std(data):
     
 def compare_simu_detection_plot(): # compare the 5 methods in detection
     try:
-        plt.style.use(['aa', 'nature'])
+        plt.style.use(['science', 'nature'])
     except:
         print("Warning: science plot style not found. Default plot style will be used.")
     
