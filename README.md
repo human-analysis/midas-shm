@@ -32,7 +32,7 @@ Even with limited sensors, MIAE demonstrates higher detection and localization p
 ![ ](assets/fig4.1.png " ")
 
 <div align="center">
-  <img src="assets/fig4.2.png" alt="Description" width="200"/>
+  <img src="assets/fig4.2.png" alt="Description" width="300"/>
 </div>
 
 ### Run the model
