@@ -31,6 +31,7 @@ MIAE can localize much smaller damages, which is represented by achieving a high
 Even with limited sensors, MIAE demonstrates higher detection and localization performance than other baselines.
 ![ ](assets/fig4.1.png " ")
 
+Localization performance
 <img src="assets/fig4.2.png" alt="Description" width="400"/>
 
 ### Run the model
