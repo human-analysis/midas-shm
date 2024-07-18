@@ -27,6 +27,11 @@ MIAE also performs better than other machine learning methods, represented by 3 
 MIAE can localize much smaller damages, which is represented by achieving a higher damage localization rate as damage propagates.
 ![ ](assets/fig3.png " ")
 
+### Number of sensors as a variable
+Even with limited sensors, MIAE demonstrates higher detection and localization performance than other baselines.
+![ ](assets/fig4.1.png " ")
+
+![ ](assets/fig4.2.png " ")<img src="assets/fig4.2.png" alt="Description" width="400"/>
 
 ### Run the model
 
