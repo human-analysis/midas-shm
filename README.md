@@ -10,29 +10,29 @@
 ```
 
 ## Overview
-In this work, we propose Mechanics-AE, a real-time SHM framework for automated damage detection and localization based on anomaly detection.
+We propose Mechanics-Informed Damage Assessment of Structures (MIDAS), a near-real-time SHM framework for automated damage detection and localization. The key contribution of MIDAS is the seamless integration of inexpensive sensors, data pre-processing in the form of compression, and a customized autoencoder called Mechanics-Informed Autoencoder (MIAE).
 
 ![Automated structural damage detection and localization framework](assets/fig1.png " ")
 
-We train Mechanics-AE on a representative dataset of normal service structural operation response and efficiently reduce the raw sensor data stream for network training. The properties of damage are unknown/undefined during training. Once trained, the reconstruction errors between the network's input and output are used to construct a model reference representing the intact structural pattern. Data collected from the damaged structure are tested in the trained model. In the top right section of the figure, the observable shift in reconstruction errors effectively highlights the detection of anomalies indicative of damage. The incorporated mechanics knowledge notably enhances the distribution shift, leading to significant improvements in damage detection rate and the potential for early damage detection. In the bottom right section, we performed sensor-wise error comparisons based on norm value and displayed it in a contour. This process assists in early localization of anomalies representing the onset of damage.
+We train MIAE on a representative dataset of normal service structural operation response and efficiently reduce the raw sensor data stream for network training. The properties of damage are unknown/undefined during training. Once trained, the reconstruction errors between the network's input and output are used to construct a model reference representing the intact structural pattern. Data collected from the damaged structure are tested in the trained model. In the top right section of the figure, the observable shift in reconstruction errors effectively highlights the detection of anomalies indicative of damage. The incorporated mechanics knowledge notably enhances the distribution shift, leading to significant improvements in damage detection rate and the potential for early damage detection. In the bottom right section, we performed sensor-wise error comparisons based on norm value and displayed it in a contour. This process assists in early localization of anomalies representing the onset of damage.
 
 ### Damage detection
-Mechanics-AE outperforms standard autoencoder in detecting different damage sizes across all metrics and can detect damages earlier.
+MIAE outperforms standard autoencoder in detecting different damage sizes across all metrics and can detect damages earlier.
 ![ ](assets/fig2.1.png " ")
 
-Mechanics-AE also performs better than other machine learning methods, represented by 3 typical crack sizes.
+MIAE also performs better than other machine learning methods, represented by 3 typical crack sizes.
 ![ ](assets/fig2.2.png " ")
 
 ### Damage localization
-Mechanics-AE can localize much smaller damages, which is represented by achieving a higher damage localization rate as damage propagates.
+MIAE can localize much smaller damages, which is represented by achieving a higher damage localization rate as damage propagates.
 ![ ](assets/fig3.png " ")
 
 
 ### Run the model
 
 ```bash
-git clone https://github.com/human-analysis/anamoly-detection-shm
-cd anamoly-detection-shm
+git clone https://github.com/human-analysis/midas-shm
+cd midas-shm
 python main.py -e crack
 ```
 
