@@ -85,25 +85,6 @@ def choose_model(method_name, train_data, test_data, args, is_train=False):
         return model, trainer
     else: #Train the model
         pass
-        # if os.listdir(args.dirs): # if model folder exist, remove old ckpt file
-        #     checkpoint_files = [file for file in os.listdir(args.dirs) if file.endswith('.ckpt') and file.startswith(method_name)]
-        #     if checkpoint_files:
-        #         print(f'removing previous {method_name} model...')
-        #         [os.remove(os.path.join(args.dirs, file)) for file in checkpoint_files]
-        # print(f'----training {method_name} for {args.experiment}----')
-        # logger = TensorBoardLogger(os.getcwd(), name="lightning_logs") 
-        # checkpoint_callback = ModelCheckpoint(
-        #     dirpath=args.dirs,
-        #     save_top_k=1,
-        #     monitor='val_loss',
-        #     mode='min',
-        #     filename=f'{method_name}-'+'{val_loss:.3e}'
-        # )
-        # trainer = pl.Trainer(accelerator="gpu", devices=1,
-        #                      max_epochs=args.epochs, logger=logger, log_every_n_steps=17,
-        #                      enable_progress_bar=False, callbacks=checkpoint_callback)
-        # trainer.fit(model)
-        # print('----training complete----\n')
     return model, trainer
 
 def model_test_data(model, trainer, data):
