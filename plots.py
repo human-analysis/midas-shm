@@ -318,8 +318,8 @@ def detection_beam_column(args):
     colors       = ['#A5A5A5', '#6C77DD', '#DDD26C', '#6CDD99', '#DD6CAF']
     
     dirs = args.dirs
-    data_zero_crack = get_detection_metric_data_all(0, path=dirs)
-    data_tasks = [get_detection_metric_data_all(levels, path=dirs) for levels in ['D0', 'D1', 'D2', 'D3'] ]
+    data_zero_crack = get_detection_metric_data_all('D0', path=dirs)
+    data_tasks = [get_detection_metric_data_all(levels, path=dirs) for levels in ['D1', 'D2', 'D3'] ]
     # ====== plot cracks
     bar_width = 0.08
     gap_width = 0.04
