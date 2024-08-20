@@ -235,12 +235,14 @@ def localization_simu(method_name, data, args, case=22, group_fig=True, crack_te
     # =============== Test
     os.makedirs('figs/localization', exist_ok=True)
     path = f'data/data-damaged-{args.experiment}/case{case}'
-    p_score = get_damage_score(loss_scores_baseline, loss_scores_baseline, args.all_sensors, alpha=args.alpha)
+    if args.is_save:
+        p_score = get_damage_score(loss_scores_baseline, loss_scores_baseline, args.all_sensors, alpha=args.alpha)
 
     # Plots for localization
     plt.subplots(figsize=(5, 5))
     plot_localization_simu(p_score, None, is_crack=False, cmap='viridis', is_bar=args.is_bar, crack_text=crack_text)
-
+    plt.savefig(f'figs/localization/{save_name}-case-{case}-0mm.svg', dpi=1000, transparent=True)
+    
     # =============== Test damaged cases
     filenames = os.listdir(path)
     length_list = find_length(filenames)
