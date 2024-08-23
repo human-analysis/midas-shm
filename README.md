@@ -43,7 +43,7 @@ cd midas-shm
 python main.py -e crack
 ```
 
-There are 3 scenarios conducted: FEM simulations ('simu', 'simu_noise', and 'simu_temp') and three experimental works ('crack', 'bc', 'beam_column') representing the crack and boundary condition variations on gusset plate and damage on a beam column structure. The trained model is provided in _saved_models_. By executing the code for different scenarios, the corresponding results (damage detection and localization figures) in the article are generated in the _figs_ folder. 
+There are 3 scenarios conducted: FEM simulations ('simu', 'simu_noise', and 'simu_temp') and three experimental works ('crack', 'bc', 'beam_column') representing the crack and boundary condition variations on gusset plate and damage on a beam column structure. The trained model is provided in _saved_models_. By executing the code for different scenarios, the article's corresponding results (damage detection and localization figures) are generated in the _figs_ folder. A _Source_data_ file is provided to reproduce the figures in the article?
 
 ### Requirements
 A `requirements.txt` file has been provided.
