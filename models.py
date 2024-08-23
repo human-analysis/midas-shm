@@ -1,10 +1,10 @@
 # ///////////// Copyright 2024. All rights reserved. /////////////
 # //
-# //   Project     : Mechanics-AE for damage detection and localization
+# //   Project     : MIDAS-shm
 # //   File        : models.py
-# //   Description : Mechanics-AE models
+# //   Description : models
 # //
-# //   Created On: 3/7/2024
+# //   Created On: 8/23/2024
 # /////////////////////////////////////////////////////////////////
 
 import torch
