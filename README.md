@@ -12,7 +12,7 @@
 ## Overview
 We propose Mechanics-Informed Damage Assessment of Structures (MIDAS), a near-real-time SHM framework for automated damage detection and localization. The key contribution of MIDAS is the seamless integration of inexpensive sensors, data pre-processing in the form of compression, and a customized autoencoder called Mechanics-Informed Autoencoder (MIAE).
 
-Check out the blog post at [here](https://go.nature.com/4heoIbT)
+Check out the blog post at [here](https://go.nature.com/4heoIbT).
 
 ![Automated structural damage detection and localization framework](assets/fig1.png " ")
 
