@@ -1,4 +1,4 @@
-# Mechanics-Informed Autoencoder Enables Automated Detection and Localization of Unforeseen Structural Damage [[arXiv]](https://arxiv.org/abs/2402.15492)
+# Mechanics-Informed Autoencoder Enables Automated Detection and Localization of Unforeseen Structural Damage [[Nature Communications]](https://www.nature.com/articles/s41467-024-52501-4) [[arXiv]](https://arxiv.org/abs/2402.15492)
 
 ```BibTex
 @article{li2024mechanics,
@@ -11,6 +11,8 @@
 
 ## Overview
 We propose Mechanics-Informed Damage Assessment of Structures (MIDAS), a near-real-time SHM framework for automated damage detection and localization. The key contribution of MIDAS is the seamless integration of inexpensive sensors, data pre-processing in the form of compression, and a customized autoencoder called Mechanics-Informed Autoencoder (MIAE).
+
+Check out the blog post at [here](https://go.nature.com/4heoIbT)
 
 ![Automated structural damage detection and localization framework](assets/fig1.png " ")
 
