@@ -1,4 +1,4 @@
-# Mechanics-Informed Autoencoder Enables Automated Detection and Localization of Unforeseen Structural Damage [[Nature Communications]](https://www.nature.com/articles/s41467-024-52501-4) [[arXiv]](https://arxiv.org/abs/2402.15492)
+# Mechanics-Informed Autoencoder Enables Automated Detection and Localization of Unforeseen Structural Damage [[NatureComms]](https://www.nature.com/articles/s41467-024-52501-4) [[arXiv]](https://arxiv.org/abs/2402.15492)
 
 ```BibTex
 @article{li2024mechanics,
